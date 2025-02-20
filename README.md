@@ -9,6 +9,7 @@ Este proyecto consta de un sistema de gestión de productos con precios especial
 
 La comunicación entre el frontend y el backend se realiza a través de una API RESTful, y se utiliza **Swagger** para documentar la API.
 
+Existen dos formas de correr el proyecto, localmente cada uno por separado o con ayuda de docker
 ## Pasos para ejecutar localmente
 
 ### 1. Clonar el repositorio
@@ -49,6 +50,11 @@ npm run dev
 
 http://localhost:3000/api
 
+## Docker
+Ejecutando este comando dentro del repositorio
+```
+docker-compose up --build
+```
 
 ## Justificación de elecciones técnicas
 
