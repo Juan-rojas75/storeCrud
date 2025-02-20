@@ -21,16 +21,23 @@ git clone https://github.com/Juan-rojas75/storeCrud.git
 ```
 cd store-backend
 ```
+
+#### Create a .env file and copy content of .env.template
+
 ```
 npm install
 ```
 ```
 npm run start:dev
 ```
+
 ### 3. Ejecutar frontend
 ```
 cd store-app
 ```
+
+#### Create a .env file and copy content of .env.template
+
 ```
 npm install
 ```
