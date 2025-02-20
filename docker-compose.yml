@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: store-backend/Dockerfile
+    container_name: store-backend
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./store-backend:/app
+    environment:
+      - NODE_ENV=production
+    networks:
+      - store-network
+
+  frontend:
+    build:
+      context: .
+      dockerfile: store-app/Dockerfile
+    container_name: store-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./store-app:/app
+    environment:
+      - NODE_ENV=development
+    networks:
+      - store-network
+    depends_on:
+      - backend
+
+networks:
+  store-network:
+    driver: bridge
