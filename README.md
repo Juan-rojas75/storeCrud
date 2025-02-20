@@ -13,16 +13,20 @@ La comunicación entre el frontend y el backend se realiza a través de una API 
 
 ### 1. Clonar el repositorio
 
+```
 git clone https://github.com/Juan-rojas75/storeCrud.git
+```
 
 ### 2. Ejecutar backend
-
+```
 cd store-backend
-
+```
+```
 npm install
-
+```
+```
 npm run start:dev
-
+```
 ### 3. Ejecutar frontend
 
 cd store-app
