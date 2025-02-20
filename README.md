@@ -28,19 +28,22 @@ npm install
 npm run start:dev
 ```
 ### 3. Ejecutar frontend
-
+```
 cd store-app
-
+```
+```
 npm install
-
+```
+```
 npm run dev
+```
 
 ### 4. Acceso a la API con Swagger
 
 http://localhost:3000/api
 
 
-### Justificación de elecciones técnicas
+## Justificación de elecciones técnicas
 
 ### 1. Frontend: Next.js con React
 
@@ -73,15 +76,15 @@ Se ha implementado Swagger para documentar la API de manera interactiva. Esto pe
 
 Se implementó paginación para las consultas de productos, lo que permite a los usuarios obtener productos de manera eficiente sin sobrecargar la base de datos ni la interfaz de usuario.
 
-### Descripción de la estructura del proyecto
+## Descripción de la estructura del proyecto
 
 El proyecto está dividido en dos carpetas principales:
 
-1. store-app (Frontend)
+### store-app (Frontend)
 Esta carpeta contiene la aplicación frontend desarrollada con Next.js y React. Aquí se gestionan los componentes de la interfaz de usuario, la interacción con la API y el enrutamiento entre las páginas.
 
-2. store-backend (Backend)
+### store-backend (Backend)
 Esta carpeta contiene el backend desarrollado con NestJS. El backend se encarga de manejar las rutas de la API, la lógica de negocio y la interacción con la base de datos.
 
-En el backend, se implementó una interfaz para los repositorios con el objetivo de permitir cambiar la base de datos en el futuro sin afectar la lógica del negocio
+### En el backend, se implementó una interfaz para los repositorios con el objetivo de permitir cambiar la base de datos en el futuro sin afectar la lógica del negocio
 En el futuro, si se desea cambiar la base de datos, solo será necesario implementar una nueva clase que cumpla con esta interfaz, lo que facilita la migración.
